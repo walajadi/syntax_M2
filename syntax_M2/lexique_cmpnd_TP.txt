@@ -1,0 +1,579 @@
+a fortiori	ADV	a fortiori
+a priori	ADJ	a priori
+a priori	ADV	a priori
+ad hoc	ADJ	ad hoc
+afin d'	P	afin de
+afin de	P	afin de
+afin que	CS	afin que
+ainsi qu'	CC	ainsi qu'
+ainsi qu'	CS	ainsi qu'
+ainsi que	CC	ainsi que
+ainsi que	CS	ainsi que
+alors même que	CS	alors même que
+alors qu'	CS	alors qu'
+alors que	CS	alors que
+après que	CS	après que
+après quoi	ADV	après quoi
+au bord du	P	au bord de+le
+au bout de	P	au bout de
+au bout du compte	ADV	au bout du compte
+au cas par cas	ADV	au cas par cas
+au coeur de	P	au coeur de
+au comptant	ADV	au comptant
+au contraire	ADV	au contraire
+au cours	P	au cours
+au cours d'	P	au cours de
+au cours de	P	au cours de
+au cours des	P	au cours de+le
+au cours du	P	au cours de+le
+au demeurant	ADV	au demeurant
+au début de	P	au début de
+au début des	P	au début de+le
+au début du	P	au début de+le
+au détriment de	P	au détriment de
+au fil des	P	au fil de+le
+au fur et à mesure que	CS	au fur et à mesure que
+au gré des	P	au gré de+le
+au jour le jour	ADV	au jour le jour
+au large	ADV	au large
+au lendemain des	P	au lendemain de+le
+au lieu d'	P	au lieu de
+au lieu de	P	au lieu de
+au lieu des	P	au lieu de+le
+au maximum	ADV	au maximum
+au mieux	ADV	au mieux
+au milieu des	P	au milieu de+le
+au minimum	ADV	au minimum
+au moins	ADV	au moins
+au mois de	P	au mois de
+au moment de	P	au moment de
+au moment où	ADV	au moment où
+au moment où	CS	au moment où
+au niveau de	P	au niveau de
+au nom de	P	au nom de
+au passage	ADV	au passage
+au pied levé	ADV	au pied levé
+au plus	ADV	au plus
+au plus bas	ADV	au plus bas
+au plus fort de	P	au plus fort de
+au plus tard	ADV	au plus tard
+au plus vite	ADV	au plus vite
+au point d'	P	au point de
+au pouvoir	ADV	au pouvoir
+au premier chef	ADV	au premier chef
+au prix d'	P	au prix de
+au prix de	P	au prix de
+au profit de	P	au profit de
+au profit des	P	au profit de+le
+au profit du	P	au profit de+le
+au préalable	ADV	au préalable
+au regard du	P	au regard de+le
+au reste	ADV	au reste
+au sein	P	au sein
+au sein d'	P	au sein de
+au sein de	P	au sein de
+au sein des	P	au sein de+le
+au sein du	P	au sein de+le
+au sommet de	P	au sommet de
+au sujet de	P	au sujet de
+au titre de	P	au titre de
+au titre des	P	au titre de+le
+au titre du	P	au titre de+le
+au total	ADV	au total
+au vu des	P	au vu de+le
+auprès d'	P	auprès de
+auprès de	P	auprès de
+auprès des	P	auprès de+le
+auprès du	P	auprès de+le
+aussi bien	ADV	aussi bien
+autant qu'	CS	autant qu'
+autant que	CS	autant que
+autour d'	P	autour de
+autour de	P	autour de
+autour des	P	autour de+le
+autour du	P	autour de+le
+autrement dit	ADV	autrement dit
+aux alentours de	P	aux alentours de
+aux côtés des	P	aux côtés de+le
+aux dépens des	P	aux dépens de+le
+aux environs de	P	aux environs de
+avant d'	P	avant de
+avant de	P	avant de
+avant même	P	avant même
+avant que	CS	avant que
+avant tout	ADV	avant tout
+beaucoup de	DET	beaucoup de
+beaucoup moins	ADV	beaucoup moins
+beaucoup plus	ADV	beaucoup plus
+bel et bien	ADV	bel et bien
+bien des	DET	bien de+le
+bien entendu	ADV	bien entendu
+bien plus	ADV	bien plus
+bien qu'	CS	bien qu'
+bien que	CS	bien que
+bien sûr	ADV	bien sûr
+bon marché	ADJ	bon marché
+bâtiment et travaux publics	NC	bâtiment et travaux publics
+cent cinquante	DET	cent cinquante
+cent mille	DET	cent mille
+certainement pas	ADV	certainement pas
+chaque fois que	CS	chaque fois que
+chargé de mission	NC	chargé de mission
+cinq cents	DET	cinq cents
+cinquante et un	DET	cinquante et un
+cinquante mille	DET	cinquante mille
+comme si	CS	comme si
+compte tenu de	P	compte tenu de
+compte tenu des	P	compte tenu de+le
+contrairement aux	P	contrairement à+le
+contrairement à	P	contrairement à
+court terme	ADJ	court terme
+coûte que coûte	ADV	coûte que coûte
+dans ce sens	ADV	dans ce sens
+dans ces conditions	ADV	dans ces conditions
+dans la mesure où	CS	dans la mesure où
+dans le but de	P	dans le but de
+dans le cadre d'	P	dans le cadre de
+dans le cadre de	P	dans le cadre de
+dans le cadre du	P	dans le cadre de+le
+dans le cas de	P	dans le cas de
+dans le domaine de	P	dans le domaine de
+dans le domaine des	P	dans le domaine de+le
+dans le domaine du	P	dans le domaine de+le
+dans le giron de	P	dans le giron de
+dans le même temps	ADV	dans le même temps
+dans le passé	ADV	dans le passé
+dans le rouge	ADV	dans le rouge
+dans le temps	ADV	dans le temps
+dans les prochains jours	ADV	dans les prochains jours
+dans son ensemble	ADV	dans son ensemble
+dans un premier temps	ADV	dans un premier temps
+de base	ADJ	de base
+de ce fait	ADV	de ce fait
+de facto	ADV	de facto
+de fait	ADV	de fait
+de l'	DET	de l'
+de la	DET	de la
+de la part de	P	de la part de
+de la part des	P	de la part de+le
+de la part du	P	de la part de+le
+de loin	ADV	de loin
+de longue date	ADV	de longue date
+de manière à	P	de manière à
+de mise	ADV	de mise
+de moins	ADV	de moins
+de moins en moins	ADV	de moins en moins
+de moitié	ADV	de moitié
+de même	ADV	de même
+de même que	CS	de même que
+de nature à	P	de nature à
+de nouveau	ADV	de nouveau
+de nuit	ADV	de nuit
+de par	P	de par
+de plein fouet	ADV	de plein fouet
+de plus	ADV	de plus
+de plus belle	ADV	de plus belle
+de plus en plus	ADV	de plus en plus
+de pointe	ADJ	de pointe
+de près	ADV	de près
+de suite	ADV	de suite
+de surcroît	ADV	de surcroît
+de temps en temps	ADV	de temps en temps
+de toute façon	ADV	de toute façon
+de type	P	de type
+de tête	ADV	de tête
+depuis peu	ADV	depuis peu
+depuis que	CS	depuis que
+des plus	ADV	des plus
+deux cents	DET	deux cents
+du côté de	P	du côté de
+du côté des	P	du côté de+le
+du fait d'	P	du fait de
+du fait de	P	du fait de
+du jour au lendemain	ADV	du jour au lendemain
+du moins	ADV	du moins
+du reste	ADV	du reste
+du tout	ADV	du tout
+dès lors	ADV	dès lors
+dès lors que	CS	dès lors que
+dès qu'	CS	dès qu'
+dès que	CS	dès que
+en apparence	ADV	en apparence
+en arrière	ADV	en arrière
+en attente	ADV	en attente
+en avant	ADV	en avant
+en baisse	ADV	en baisse
+en baisse de	P	en baisse de
+en bloc	ADV	en bloc
+en cas d'	P	en cas de
+en cas de	P	en cas de
+en cause	ADV	en cause
+en ce qui concerne	P	en ce qui concerne
+en ce sens	ADV	en ce sens
+en charge	ADV	en charge
+en commun	ADV	en commun
+en compte	ADV	en compte
+en continu	ADV	en continu
+en cours	ADV	en cours
+en cours d'	P	en cours de
+en cours de	P	en cours de
+en danger	ADV	en danger
+en date	ADV	en date
+en dehors de	P	en dehors de
+en dessous des	P	en dessous de+le
+en deçà de	P	en deçà de
+en direction de	P	en direction de
+en douceur	ADV	en douceur
+en définitive	ADV	en définitive
+en dépit d'	P	en dépit de
+en dépit de	P	en dépit de
+en dépit des	P	en dépit de+le
+en développement	ADV	en développement
+en effet	ADV	en effet
+en espèces	ADV	en espèces
+en fait	ADV	en fait
+en fanfare	ADV	en fanfare
+en faveur d'	P	en faveur de
+en faveur de	P	en faveur de
+en faveur des	P	en faveur de+le
+en faveur du	P	en faveur de+le
+en fin d'	P	en fin de
+en fin de	P	en fin de
+en fonction de	P	en fonction de
+en fonction des	P	en fonction de+le
+en fonction du	P	en fonction de+le
+en fraude	ADV	en fraude
+en grande partie	ADV	en grande partie
+en gros	ADV	en gros
+en général	ADV	en général
+en hausse	ADV	en hausse
+en jeu	ADV	en jeu
+en la matière	ADV	en la matière
+en liaison avec	P	en liaison avec
+en matière d'	P	en matière de
+en matière de	P	en matière de
+en mesure d'	P	en mesure de
+en moins	ADV	en moins
+en moyenne	ADV	en moyenne
+en même temps	ADV	en même temps
+en même temps qu'	CS	en même temps qu'
+en même temps que	CS	en même temps que
+en nature	ADV	en nature
+en outre	ADV	en outre
+en particulier	ADV	en particulier
+en partie	ADV	en partie
+en passant par	P	en passant par
+en passe de	P	en passe de
+en permanence	ADV	en permanence
+en place	ADV	en place
+en plus	ADV	en plus
+en plus des	P	en plus de+le
+en premier lieu	ADV	en premier lieu
+en principe	ADV	en principe
+en priorité	ADV	en priorité
+en privé	ADV	en privé
+en proie à	P	en proie à
+en propre	ADV	en propre
+en présence de	P	en présence de
+en quelque sorte	ADV	en quelque sorte
+en question	ADJ	en question
+en question	ADV	en question
+en quête de	P	en quête de
+en raison	P	en raison
+en raison d'	P	en raison de
+en raison de	P	en raison de
+en raison des	P	en raison de+le
+en raison du	P	en raison de+le
+en rase campagne	ADV	en rase campagne
+en retrait	ADV	en retrait
+en revanche	ADV	en revanche
+en réalité	ADV	en réalité
+en service	ADV	en service
+en silence	ADV	en silence
+en soi	ADV	en soi
+en stagnation	ADV	en stagnation
+en substance	ADV	en substance
+en surface	ADV	en surface
+en série	ADV	en série
+en tant que	P	en tant que
+en termes d'	P	en termes de
+en termes de	P	en termes de
+en tout	ADV	en tout
+en tout cas	ADV	en tout cas
+en train de	P	en train de
+en tête	ADV	en tête
+en tête	P	en tête
+en tête des	P	en tête de+le
+en vain	ADV	en vain
+en vente	ADV	en vente
+en vertu de	P	en vertu de
+en vigueur	ADV	en vigueur
+en voie d'	P	en voie de
+en voie de	P	en voie de
+en voie de développement	ADJ	en voie de développement
+en vue d'	P	en vue de
+en vue de	P	en vue de
+en vue du	P	en vue de+le
+en échange d'	P	en échange de
+en échange de	P	en échange de
+entre autres	ADV	entre autres
+et aussi	CC	et aussi
+et même	CC	et même
+face au	P	face à+le
+face aux	P	face à+le
+face à	P	face à
+faute d'	P	faute de
+faute de	P	faute de
+grand public	ADJ	grand public
+grosso modo	ADV	grosso modo
+grâce au	P	grâce à+le
+grâce aux	P	grâce à+le
+grâce à	P	grâce à
+hors de	P	hors de
+hors du	P	hors de+le
+ici et là	ADV	ici et là
+il est vrai	ADV	il est vrai
+il y a	P	il y a
+in extremis	ADV	in extremis
+jamais vu	NC	jamais vu
+la plupart	PRO	la plupart
+la plupart des	DET	la plupart de+le
+la plupart des	P	la plupart de+le
+la veille	ADV	la veille
+le cas échéant	ADV	le cas échéant
+le peu de	DET	le peu de
+le plus	ADV	le plus
+le plus souvent	ADV	le plus souvent
+le temps de	P	le temps de
+loin d'	P	loin de
+loin de	P	loin de
+loin des	P	loin de+le
+lors d'	P	lors de
+lors de	P	lors de
+lors des	P	lors de+le
+lors du	P	lors de+le
+mais aussi	CC	mais aussi
+malgré tout	ADV	malgré tout
+manque à gagner	NC	manque à gagner
+mise en forme	NC	mise en forme
+moins de	P	moins de
+métier à tisser	NC	métier à tisser
+métiers à tisser	NC	métier à tisser
+même s'	CS	même s'
+même si	CS	même si
+ne pas	ADV	ne pas
+ne plus	ADV	ne plus
+nombre d'	DET	nombre de
+nombre de	DET	nombre de
+non plus	ADV	non plus
+non seulement	ADV	non seulement
+ou bien	CC	ou bien
+ou bien encore	CC	ou bien encore
+par ailleurs	ADV	par ailleurs
+par avance	ADV	par avance
+par câble	ADV	par câble
+par définition	ADV	par définition
+par exemple	ADV	par exemple
+par hasard	ADV	par hasard
+par la suite	ADV	par la suite
+par le passé	ADV	par le passé
+par peur d'	P	par peur de
+par rapport au	P	par rapport à+le
+par rapport aux	P	par rapport à+le
+par rapport à	P	par rapport à
+par suite de	P	par suite de
+par trop	ADV	par trop
+par téléphone	ADV	par téléphone
+parce qu'	CS	parce qu'
+parce que	CS	parce que
+pas du tout	ADV	pas du tout
+pas encore	ADV	pas encore
+pas moins	ADV	pas moins
+pendant que	CS	pendant que
+permis de conduire	NC	permis de conduire
+petites et moyennes entreprises	NC	petites et moyennes entreprises
+peu ou prou	ADV	peu ou prou
+peu à peu	ADV	peu à peu
+plus d'	P	plus de
+plus de	ADV	plus de
+plus de	P	plus de
+plus du	P	plus de+le
+plus encore	ADV	plus encore
+plus ou moins	ADV	plus ou moins
+plus qu'	ADV	plus qu'
+plus que	ADV	plus que
+plus que jamais	ADV	plus que jamais
+plus tard	ADV	plus tard
+plutôt que	CS	plutôt que
+pour autant	ADV	pour autant
+pour cause de	P	pour cause de
+pour la plupart	ADV	pour la plupart
+pour la première fois	ADV	pour la première fois
+pour le moins	ADV	pour le moins
+pour leur part	ADV	pour leur part
+pour qu'	CS	pour qu'
+pour que	CS	pour que
+pour sa part	ADV	pour sa part
+prix de revient	NC	prix de revient
+près d'	P	près de
+près de	ADV	près de
+près de	P	près de
+près des	P	près de+le
+près du	P	près de+le
+purement et simplement	ADV	purement et simplement
+quand même	ADV	quand même
+quant aux	P	quant à+le
+quant à	P	quant à
+quatre cent mille	DET	quatre cent mille
+quelque chose	PRO	quelque chose
+quelque peu	ADV	quelque peu
+quelque temps	ADV	quelque temps
+quitte à	P	quitte à
+sans aucun doute	ADV	sans aucun doute
+sans compter	P	sans compter
+sans doute	ADV	sans doute
+sans emploi	ADJ	sans emploi
+sans précédent	ADV	sans précédent
+sans qu'	CS	sans qu'
+sans que	CS	sans que
+sauf à	P	sauf à
+scala mobile	ET	scala mobile
+sept cents	DET	sept cents
+si peu	ADV	si peu
+si possible	ADV	si possible
+sine qua non	ADV	sine qua non
+six mille	DET	six mille
+sous forme d'	P	sous forme de
+sous forme de	P	sous forme de
+sous la forme d'	P	sous la forme de
+sous la pression de	P	sous la pression de
+sous la pression des	P	sous la pression de+le
+sous le nom de	P	sous le nom de
+sous licence	ADV	sous licence
+sous peu	ADV	sous peu
+sous surveillance	ADV	sous surveillance
+stricto sensu	ADV	stricto sensu
+success story	ET	success story
+sur ce point	ADV	sur ce point
+sur fond de	P	sur fond de
+sur la voie de	P	sur la voie de
+sur le terrain	ADV	sur le terrain
+sur les rails	ADV	sur les rails
+sur les rangs	ADV	sur les rangs
+sur place	ADV	sur place
+sur terre	ADV	sur terre
+tandis qu'	CS	tandis qu'
+tandis que	CS	tandis que
+tant qu'	CS	tant qu'
+tant que	CS	tant que
+taux au jour le jour	NC	taux au jour le jour
+toujours pas	ADV	toujours pas
+tour à tour	ADV	tour à tour
+tous azimuts	ADV	tous azimuts
+tout au long de	P	tout au long de
+tout au long du	P	tout au long de+le
+tout au moins	ADV	tout au moins
+tout de même	ADV	tout de même
+tout juste	ADV	tout juste
+tout le monde	PRO	tout le monde
+tout à fait	ADV	tout à fait
+tout à la fois	ADV	tout à la fois
+trois mille	DET	trois mille
+un peu	ADV	un peu
+un peu plus	ADV	un peu plus
+un peu plus de	ADV	un peu plus de
+une fois	ADV	une fois
+une sorte de	DET	une sorte de
+y compris	ADV	y compris
+y compris	P	y compris
+à bon marché	ADV	à bon marché
+à bout de	P	à bout de
+à bout de souffle	ADV	à bout de souffle
+à cause de	P	à cause de
+à cause du	P	à cause de+le
+à ce point	ADV	à ce point
+à ce propos	ADV	à ce propos
+à ce sujet	ADV	à ce sujet
+à cet égard	ADV	à cet égard
+à ciel ouvert	ADV	à ciel ouvert
+à commencer par	P	à commencer par
+à compter du	P	à compter de+le
+à condition que	CS	à condition que
+à coup sûr	ADV	à coup sûr
+à coups de	P	à coups de
+à court terme	ADJ	à court terme
+à court terme	ADV	à court terme
+à côté d'	P	à côté de
+à côté de	P	à côté de
+à distance	ADV	à distance
+à défaut de	P	à défaut de
+à flot	ADV	à flot
+à fond	ADV	à fond
+à force d'	P	à force de
+à haut potentiel	ADV	à haut potentiel
+à hauteur de	P	à hauteur de
+à juste titre	ADV	à juste titre
+à la baisse	ADV	à la baisse
+à la charge de	P	à la charge de
+à la charge du	P	à la charge de+le
+à la faveur d'	P	à la faveur de
+à la fin	P	à la fin
+à la fin de	P	à la fin de
+à la fin des	P	à la fin de+le
+à la fin du	P	à la fin de+le
+à la fois	ADV	à la fois
+à la hausse	ADV	à la hausse
+à la hauteur des	P	à la hauteur de+le
+à la main	ADV	à la main
+à la mesure des	P	à la mesure de+le
+à la recherche d'	P	à la recherche de
+à la suite d'	P	à la suite de
+à la suite de	P	à la suite de
+à la suite des	P	à la suite de+le
+à la suite du	P	à la suite de+le
+à la tête de	P	à la tête de
+à la tête des	P	à la tête de+le
+à la tête du	P	à la tête de+le
+à la veille de	P	à la veille de
+à leur tour	ADV	à leur tour
+à long terme	ADJ	à long terme
+à long terme	ADV	à long terme
+à mesure que	CS	à mesure que
+à moins d'	P	à moins de
+à moins de	P	à moins de
+à moins que	CS	à moins que
+à moitié	ADV	à moitié
+à moyen terme	ADV	à moyen terme
+à niveau	ADV	à niveau
+à nouveau	ADV	à nouveau
+à part	P	à part
+à part entière	ADJ	à part entière
+à partir d'	P	à partir de
+à partir de	P	à partir de
+à partir des	P	à partir de+le
+à partir du	P	à partir de+le
+à peine	ADV	à peine
+à perte	ADV	à perte
+à peu près	ADV	à peu près
+à portée de main	ADV	à portée de main
+à première vue	ADV	à première vue
+à propos d'	P	à propos de
+à propos de	P	à propos de
+à propos des	P	à propos de+le
+à proximité de	P	à proximité de
+à présent	ADV	à présent
+à raison d'	P	à raison de
+à raison de	P	à raison de
+à savoir	CC	à savoir
+à son terme	ADV	à son terme
+à son tour	ADV	à son tour
+à temps	ADV	à temps
+à terme	ADV	à terme
+à tort	ADV	à tort
+à tout moment	ADV	à tout moment
+à tout prix	ADV	à tout prix
+à travers	P	à travers
+à venir	ADJ	à venir
+à venir	ADV	à venir
+à vie	ADV	à vie
+à vue	ADV	à vue
