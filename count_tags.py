@@ -24,7 +24,7 @@ def counts_tag(lefff_file, suffixes_file) :
 
 	return tags
 
-lefff_file = r'/home/slim/Git/syntax_M2/lefff_5000.ftb4tags'
-suffixes_file = r'/home/slim/Git/syntax_M2/sufflist.txt'
+lefff_file = r'lefff_5000.ftb4tags'
+suffixes_file = r'sufflist.txt'
 
 TAGS = counts_tag(lefff_file, suffixes_file)
