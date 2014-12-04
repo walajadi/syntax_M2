@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 from count_tags import TAGS
 from input_g1 import getUnknownWords
+import codecs
 
 class_reducer = {
 	'VS':'V'
@@ -21,14 +22,34 @@ class_reducer = {
 	'PROREL':'X'
 }
 
-UNK = getUnknownWords(f1,f2)
+class SuffixGuesser :
+	#class reconnaisant les suffixes
 
-'''
-	# couper les terminaisons
-	# comparer selon le lexique
-	# à faire: "unkWord" : 'suffix1' : tagX, 'suffix2' : 'tagY' ...
-				on calcule le seuil pour décider !
-					si seuil > 3 :
-						on décide que c'est pertinent ! 
+	def __init__(self, suffixes_file) :
+		self.suffixes = []
+		with codecs.open(suffixes_file, 'r', 'utf-8') as inputfile :
+			for line in inputfile :
+				self.suffixes.append(line.rstrip('\n\r'))
 
-'''
+		inputfile.close()
+
+		def listeSuffPossibles(self, mot) :
+			#on aura une liste possible de suffixes pour un mot donné
+			results = set([])
+			for suff in self.suffixes :
+				if word.endswith(suff) :
+					results.append(suff)
+
+
+			return results
+
+def Analyser :
+	
+	#analyse morphologique
+
+	def __init__(self, suffReco, probaSuff) :
+		self.suff_guesser = SuffixGuesser()
+		self.proba_suffix = probaSuff
+
+
+

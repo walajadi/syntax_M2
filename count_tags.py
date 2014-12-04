@@ -49,4 +49,8 @@ suffixes_file = r'sufflist.txt'
 lex_pond = r'lexiquePondere.txt'
 pondrerLexique(lefff_file, lex_pond)
 
+<<<<<<< HEAD
 #TAGS = counts_tag(lefff_file, suffixes_file)
+=======
+TAGS = counts_tag(lefff_file, suffixes_file)
+>>>>>>> b3ff80a3c4067e43994956ed207872d338855f15
