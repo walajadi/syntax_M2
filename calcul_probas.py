@@ -25,6 +25,31 @@ def counts_tag(lefff_file, suffixes_file) :
 	return tags
 
 lefff_file = r'lefff_5000.ftb4tags'
-suffixes_file = r'sufflist.txt'
+suffixes_file = r'pertinent_suffixes.txt'
 
 TAGS = counts_tag(lefff_file, suffixes_file)
+probas = {}
+
+for suff in TAGS :
+	probas[suff] = []
+	nb_cat = len(TAGS[suff])
+	nb_occ_total = 0
+	for cat in TAGS[suff] : 
+		nb_occ_total += TAGS[suff][cat]
+	for cat in TAGS[suff] :
+		nb_occ = TAGS[suff][cat]
+		seuil = nb_occ / nb_cat
+		if seuil >= 3 :
+			proba = float(nb_occ) / nb_occ_total
+			proba_str = "%s : %.2f" % (cat, proba)
+			probas[suff].append(proba_str)
+	
+cat_probas = codecs.open(r'cat_probas.txt', "w", "utf-8")
+
+for suff in probas:
+	if len(probas[suff]) > 0 :
+		probas_str = ""
+		for cat in probas[suff] :
+			probas_str += cat
+			probas_str += "; "
+		cat_probas.write(suff+"\t"+probas_str+"\n")

@@ -1,0 +1,8 @@
+N/V : mesure
+N/Adj : voisin
+N/Adv : ensemble
+V/Adj : complète
+V/Adv : maintenant
+Adj/Adv : fort
+N/Adj/V : pratique
+N/Adj/Adv : mal

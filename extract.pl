@@ -2,7 +2,7 @@
 
 use utf8;
 
-my $fpath = './suffixes.txt';
+my $fpath = './prefixes.txt';
 
 open my $fh, "<:encoding(utf8)", $fpath;
 
@@ -12,7 +12,7 @@ my $sufflist = "";
 
 while (<$fh>){
 	$str = $_;
-	($extracted) = $str =~ m/title="-(.*)"/;
+	($extracted) = $str =~ m/title="(.*)-"/;
 	$sufflist .= $extracted;
 	if($extracted) {
 		$sufflist .= "\n";
@@ -20,6 +20,6 @@ while (<$fh>){
 	}
 	
 close $fh;
-open my $handle, ">:encoding(utf8)", "sufflist.txt";
+open my $handle, ">:encoding(utf8)", "preflist.txt";
 print $handle $sufflist;
 close $handle;
