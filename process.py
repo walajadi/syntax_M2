@@ -2,29 +2,21 @@
 #from count_tags import TAGS
 #from input_g1 import getUnknownWords
 import codecs
-'''
+from input_g1 import gerLexique
 class_reducer = {
 	'VS':'V',
-	'VIMP':'V'
-	'VINF':'V'
-	'VPP':'V'
-	'VPR':'V'
-	'NP':'NP'
-	'ADJ':'ADJ'
-	'ADV':'ADV'
-	'CL':'X'
-	'PONCT':'X'
-	'P':'X'
-	'DET':'X'
-	'CLO':'X'
-	'CC':'X'
-	'PROWH':'X'
-	'PROREL':'X'
+	'VIMP':'V',
+	'VINF':'V',
+	'VPP':'V',
+	'VPR':'V',
+	'NP':'NP',
+	'ADJ':'ADJ',
+	'ADV':'ADV',
 }
-'''
+
 class AffixGuesser :
 
-	#class reconnaisant les suffixes
+	#class reconnaisant les affixes
 
 	def __init__(self, suffixes_file, prefixes_file) :
 		self.suffixes = []
@@ -52,7 +44,7 @@ class AffixGuesser :
 	def listePrefPossibles(self, unknownWord) :
 		results = set([])
 		for pref in self.prefixes:
-			if unknownWord.startswith(pref) or unknownWord.startswith(pref+'-') :
+			if unknownWord.startswith(pref) :
 				results.add(pref)
 		return results
 
@@ -68,31 +60,39 @@ class Analyser :
 		self.proba_suffix = probaSuff
 		self.lexique = lexique
 
-	def scoreToken(self, token) :
-		pass
+	def scoreToken(self, suff) :
+		return proba_suffix[suff]
 
 	def checkStem(self, token) :
 
 		suffixes = self.affixGuesser.listeSuffPossibles(token)
 		prefixes = self.affixGuesser.listePrefPossibles(token)
+		stem = token
+		suffix = sort_truc(suffixes)[0]
 
-		for suff in suffixes :
+		for suff in sort_truc(suffixes) :
 			if token[:len(suff)] in self.lexique :
 				#bingo trouvé
-				return True #or something like this
+				suffix = suff
+				stem = token[:len(suff)]
+				return (token, stem, suff) #or something like this
 			else :
 				for pref in prefixes :
 					if token[len(pref):] in self.lexique :
-						return (token, pref)
+						return (token, stem, null)
 					elif token[len(pref):len(suff)] in self.lexique :
-						return (token, (pref, suff))
-		return (token, null)
+						return (token, stem, suff)
+
+		return (token, stem, sort_truc(suffixes)[0])
 
  
 if __name__ == '__main__':
+
 	suff = r'pertinent_suffixes.txt'
 	pref = r'pertinent_prefixes.txt'
-
+	lex_path = r'lexique.txt'
+	lexique =  getlexique(lex_path)
 	guesser = AffixGuesser(suff, pref)
-	print guesser.listePrefPossibles(u'antinucléaire')
-	print guesser.listeSuffPossibles(u'industrialisation')
+	#print guesser.listePrefPossibles(u'antinucléaire')
+	#print guesser.listeSuffPossibles(u'industrialisation')
+	analyseur = Analyser(guesser, truc_proba , lexique)
