@@ -13,6 +13,10 @@ def counts_tag(lefff_file, suffixes_file) :
 	with codecs.open(lefff_file,'r', 'utf-8') as inputFileObj :
 		for line in inputFileObj :
 			word, cat  = line.split()[0], line.split()[1]
+			if cat[0] == 'N':
+				cat = "N"
+			if cat[0] == 'V':
+				cat = "V"
 			for suffix in suffixes_list :
 				if suffix not in tags :
 					tags[suffix] = {}
@@ -25,7 +29,7 @@ def counts_tag(lefff_file, suffixes_file) :
 	return tags
 
 lefff_file = r'lefff_5000.ftb4tags'
-suffixes_file = r'pertinent_suffixes.txt'
+suffixes_file = r'pertinent_suffixes+s.txt'
 
 TAGS = counts_tag(lefff_file, suffixes_file)
 probas = {}
