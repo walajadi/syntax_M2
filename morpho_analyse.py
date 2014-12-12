@@ -95,7 +95,10 @@ class Analyser :
 			p2 = composes[-1]
 			if p1 not in prefixes and p2 not in suffixes:
 				#mot compose
-				if p1 in lexique:
+				p1sg = p1
+				if p1[-1] in "sx":
+					p1sg = p1[:-1]
+				if p1 in lexique or p1sg in lexique:
 					if p2 in lexique:
 						return (token,stem,None,True)
 					else:
