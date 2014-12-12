@@ -5,19 +5,7 @@ import re
 import sys
 import codecs
 from lib2.probas2dict import dict_probas
-from pprint import pprint
 
-class_reducer = {
-	'VS':'V',
-	'VIMP':'V',
-	'VINF':'V',
-	'VPP':'V',
-	'VPR':'V',
-	'NPP':'N',
-	'NC' : 'N',
-	'ADJ':'ADJ',
-	'ADV':'ADV',
-}
 
 class AffixGuesser :
 
@@ -104,9 +92,8 @@ class Analyser :
 				stem = stem[:-1]
 			if(len(stem) > 2):
 				if self.searchLexique(stem) :
-					#bingo trouvé
 					suffix = suff
-					return (token, stem, suff, True) #or something like this
+					return (token, stem, suff, True)
 				else :
 					for pref in prefixes :
 						stem = token[len(pref):len(token) - len(suff)]
@@ -114,11 +101,9 @@ class Analyser :
 							stem = stem[1:]
 						if(len(stem)>2):
 							if self.searchLexique(stem) :
-								return (token, stem,suff,True)#ici on peux retourner le prefixe ??
+								return (token, stem,suff,True)
 							else:
 								stem = token[:len(token) - len(suff)]
-						#elif self.searchLexique(stem) :
-						#	return (token, stem, suff)
 		try :
 			return (token, stem, suffixes[0], False)
 		except KeyError:
@@ -143,7 +128,9 @@ def getLexique(infile) :
 	with codecs.open(infile, 'r', 'utf-8') as inputFileObj:
 		for line in inputFileObj :
 			data = line.split('\t')
-			liste.append(data[0])
+			mot = data[0]
+			mot.lower()
+			liste.append(mot)
 	inputFileObj.close()
 	return liste
 				
@@ -169,8 +156,9 @@ def readFileG1(line, analyseur, lexique) :
 		if len(c) > 1 :
 			acol = c[0]
 			mot = c[1]
-			
-			if mot in lexique :
+			word2search = mot
+			word2search.lower()
+			if word2search in lexique :
 				print(acol+" "+mot+" "),
 			elif mot[0] == '_':
 				print(acol+" "+mot+" "),
@@ -178,7 +166,7 @@ def readFileG1(line, analyseur, lexique) :
 				print(acol+" "+mot+" "),
 			else :
 				new_acol = acol[:-1]
-				(stem, tags, found) = analyseur.getTag(mot)
+				(stem, tags, found) = analyseur.getTag(word2search)
 				new_acol += "|2:stem:"
 				new_acol += stem
 				count_tags = 1
@@ -251,16 +239,14 @@ if __name__ == '__main__':
 	pref = r'lib2/pertinent_prefixes.txt'
 	lex_path = r'lib2/lexique.txt'
 	probas_file = r'lib2/cat_probas.txt'
+	
 	lexique =  getLexique(lex_path)
 	dict_proba = dict_probas(probas_file)
-	#print(dict_proba)
 	guesser = AffixGuesser(suff, pref)
-	#print guesser.listePrefPossibles(u'ifférentes')
-	#print guesser.listeSuffPossibles(u'ifférentes')
 	analyseur = Analyser(guesser, dict_proba , lexique)
-	#print analyseur.checkStem('anticonsititutionnellement')
-	#print analyseur.getTag("ifférentes")
+
 	for line in sys.stdin:
-		line.encode('utf8').rstrip("\n\r")
+		if (not isinstance(line, unicode)) :
+			line = line.decode('utf-8').rstrip("\n\r")
 		readFileG1(line, analyseur, lexique)
 
