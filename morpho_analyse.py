@@ -100,7 +100,7 @@ class Analyser :
 			return (token,stem,'',False)
 		for suff in  suffixes:
 			stem = token[:len(token) - len(suff)]
-			if(len(stem) > 1):
+			if(len(stem) > 2):
 				if self.searchLexique(stem) :
 					#bingo trouvé
 					suffix = suff
@@ -108,8 +108,11 @@ class Analyser :
 				else :
 					for pref in prefixes :
 						stem = token[len(pref):len(token) - len(suff)]
-						if self.searchLexique(stem) :
-							return (token, stem,suff,True)#ici on peux retourner le prefixe ??
+						if(len(stem)>2):
+							if self.searchLexique(stem) :
+								return (token, stem,suff,True)#ici on peux retourner le prefixe ??
+							else:
+								stem = token[:len(token) - len(suff)]
 						#elif self.searchLexique(stem) :
 						#	return (token, stem, suff)
 		try :
@@ -162,9 +165,10 @@ def readFileG1(line, analyseur, lexique) :
 		if len(c) > 1 :
 			acol = c[0]
 			mot = c[1]
-			if mot[0] == '_':
+			
+			if mot in lexique :
 				print(acol+" "+mot+" "),
-			elif mot in lexique :
+			elif mot[0] == '_':
 				print(acol+" "+mot+" "),
 			elif mot[0] in '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~':
 				print(acol+" "+mot+" "),
