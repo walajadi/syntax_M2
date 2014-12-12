@@ -92,14 +92,13 @@ class Analyser :
 			if p1 not in prefixes and p2 not in suffixes:
 				if p1 in lexique:
 					if p2 in lexique:
-						return (token,stem,[],True)
+						return (token,stem,None,True)
 					else:
 						for suff in suffixes:
 							stemp2 = p2[:len(token) - len(suff)]
 							if(len(stemp2) > 2):
 								if self.searchLexique(stemp2) :
-								suffix = suff
-								return (token, p1+'-'+stemp2, suff, True)
+									return (token, p1+'-'+stemp2, suff, True)
 		if len(suffixes) < 1:
 			return (token,stem,'',False)
 		for suff in  suffixes:
@@ -109,7 +108,6 @@ class Analyser :
 					stem = stem[:-1]
 			if(len(stem) > 2):
 				if self.searchLexique(stem) :
-					suffix = suff
 					return (token, stem, suff, True)
 				else :
 					for pref in prefixes :
