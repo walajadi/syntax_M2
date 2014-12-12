@@ -1,0 +1,87 @@
+{Piere|2:stem:Pier|2:tag:V|2:certitude:0.55|2:tag:N|2:certitude:0.31|2:change:mesure} Piere
+{et} et
+{Jean} Jean
+{Maçon|2:stem:Maç|2:tag:N|2:certitude:0.96|2:change:chien|2:faute} Maçon
+{on} on
+{tout} tout
+{les} les
+{deux} deux
+{fêté} fêté
+{leur} leur
+{anniv} anniversaire
+{hier} hier
+{;;}_PONCT
+{C’} c'
+{était} était
+{une} une
+{grosse} grosse
+{teuf} fête
+{2} de
+{la} la
+{mort} mort
+{,}_PONCT
+{on} on
+{a} a
+{tout} tout
+{KC} cassé
+{.}_PONCT
+{Marie} Marie
+{est} est
+{partie} partie
+{à} à
+{16h}_TIME
+{pcq} parce
+{} que
+{ses} ses
+{parents} parents
+{la} la
+{saoulaient|2:stem:saoulaient|2:faute} saoulaient
+{_LCB}_PONCT
+{vraiment} vraiment
+{_RCB}_PONCT
+{.}_PONCT
+{M.} M.
+{le} le
+{président} président
+{Obama|2:stem:Obam|2:tag:V|2:certitude:0.96|2:change:voit|2:faute} Obama
+{argait|2:stem:rga|2:tag:V|2:certitude:0.97|2:change:voit|2:faute} argait
+{être} être
+{au} au
+{top|2:stem:top|2:faute} top
+{du} du
+{top|2:stem:top|2:faute} top
+{lorsque} lorsque
+{le} le
+{conférence} conférence
+{du} du
+{8/09/2020}_DATE
+{à} à
+{débutée} débutée
+{.}_PONCT
+{mdr} mort de rire
+{je} je
+{t’} t'
+{aimeuuh} aime
+{trô} trop
+{=)}_SMILEY
+{il} il
+{y} y
+{a} a
+{d|2:stem:d|2:faute} d
+{ifférentes|2:stem:ifférente|2:tag:V|2:certitude:0.63|2:faute} ifférentes
+{possibilités}
+{_UDS}_PONCT
+{Il} il
+{a} a
+{dit} dit
+{“}_PONCT
+{oui} oui
+{,}_PONCT
+{je} je
+{ne} ne
+{veux} veux
+{pas} pas
+{voir} voir
+{ça} ça
+{”}_PONCT
+{.}_PONCT
