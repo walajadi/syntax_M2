@@ -84,6 +84,22 @@ class Analyser :
 		prefixes = self.aff_guesser.listePrefPossibles(token)
 		stem = token
 		suffixes = sorted(suffixes,key=len, reverse = True)
+		
+		if '-' in stem:
+			composes = stem.split('-')
+			p1 = composes[0]
+			p2 = composes[-1]
+			if p1 not in prefixes and p2 not in suffixes:
+				if p1 in lexique:
+					if p2 in lexique:
+						return (token,stem,[],True)
+					else:
+						for suff in suffixes:
+							stemp2 = p2[:len(token) - len(suff)]
+							if(len(stemp2) > 2):
+								if self.searchLexique(stemp2) :
+								suffix = suff
+								return (token, p1+'-'+stemp2, suff, True)
 		if len(suffixes) < 1:
 			return (token,stem,'',False)
 		for suff in  suffixes:
