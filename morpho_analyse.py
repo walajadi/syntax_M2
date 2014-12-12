@@ -129,7 +129,7 @@ def getLexique(infile) :
 		for line in inputFileObj :
 			data = line.split('\t')
 			mot = data[0]
-			mot.lower()
+			mot = mot.lower()
 			liste.append(mot)
 	inputFileObj.close()
 	return liste
@@ -157,7 +157,7 @@ def readFileG1(line, analyseur, lexique) :
 			acol = c[0]
 			mot = c[1]
 			word2search = mot
-			word2search.lower()
+			word2search = word2search.lower()
 			if word2search in lexique :
 				print(acol+" "+mot+" "),
 			elif mot[0] == '_':
