@@ -161,11 +161,11 @@ def readFileG1(line, analyseur, lexique) :
 			word2search = mot
 			word2search = word2search.lower()
 			if word2search in lexique :
-				print(acol+" "+mot+" "),
+				print(acol+" "+mot+" ").encode("utf-8"),
 			elif mot[0] == '_':
-				print(acol+" "+mot+" "),
+				print(acol+" "+mot+" ").encode("utf-8"),
 			elif mot[0] in '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~':
-				print(acol+" "+mot+" "),
+				print(acol+" "+mot+" ").encode("utf-8"),
 			else :
 				new_acol = acol[:-1]
 				(stem, tags, found) = analyseur.getTag(word2search)
@@ -228,9 +228,9 @@ def readFileG1(line, analyseur, lexique) :
 				else:
 					new_acol += "|2:faute:0"
 				new_acol += "}"	
-				print(new_acol+" "+mot+"\n"),
+				print(new_acol+" "+mot+"\n").encode("utf-8"),
 		else:
-			print(c[0]+" "),
+			print(c[0]+" ").encode("utf-8"),
 	
 	print("\n")	
 
