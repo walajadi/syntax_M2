@@ -100,6 +100,8 @@ class Analyser :
 			return (token,stem,'',False)
 		for suff in  suffixes:
 			stem = token[:len(token) - len(suff)]
+			while stem[-1] in "-_":
+				stem = stem[:-1]
 			if(len(stem) > 2):
 				if self.searchLexique(stem) :
 					#bingo trouvé
@@ -108,6 +110,8 @@ class Analyser :
 				else :
 					for pref in prefixes :
 						stem = token[len(pref):len(token) - len(suff)]
+						while stem[0] in "-_":
+							stem = stem[1:]
 						if(len(stem)>2):
 							if self.searchLexique(stem) :
 								return (token, stem,suff,True)#ici on peux retourner le prefixe ??
