@@ -26,6 +26,7 @@ class AffixGuesser :
 		
 		inputfile_.close()
 
+	#liste triee des suffixes du mot 
 	def listeSuffPossibles(self, unknownWord) :
 		#on aura une liste possible de suffixes pour un mot donné
 		results = set([])
@@ -35,6 +36,7 @@ class AffixGuesser :
 		results = sorted(results, key=len, reverse=True)
 		return results
 
+	#liste triee des prefixes du mot 
 	def listePrefPossibles(self, unknownWord) :
 		results = set([])
 		for pref in self.prefixes:
@@ -55,11 +57,12 @@ class Analyser :
 		self.lexique = lexique
 		self.last_suffix = ''
 
+	#la probabilite de la categorie morphosyntaxique
 	def scoreToken(self, suff) :
 		return self.proba_suffix[suff]
 	
+	#recherche du stem dans le lexique
 	def searchLexique(self, stem) :
-
 		pattern = '^'+stem+'\w?$'
 		if re.search('(c|ç)$', stem) != None :
 			pattern = '^'+stem[:-1]+'(c|ç|que|ch)\w?$'
@@ -78,6 +81,7 @@ class Analyser :
 			
 		return False
 
+	#analyse morphologique du mot
 	def checkStem(self, token) :
 
 		suffixes = self.aff_guesser.listeSuffPossibles(token)
@@ -90,6 +94,7 @@ class Analyser :
 			p1 = composes[0]
 			p2 = composes[-1]
 			if p1 not in prefixes and p2 not in suffixes:
+				#mot compose
 				if p1 in lexique:
 					if p2 in lexique:
 						return (token,stem,None,True)
@@ -100,7 +105,7 @@ class Analyser :
 								if self.searchLexique(stemp2) :
 									return (token, p1+'-'+stemp2, suff, True)
 		if len(suffixes) < 1:
-			return (token,stem,'',False)
+			return (token,stem,None,False)
 		for suff in  suffixes:
 			stem = token[:len(token) - len(suff)]
 			if(len(stem) > 2):
@@ -108,6 +113,7 @@ class Analyser :
 					stem = stem[:-1]
 			if(len(stem) > 2):
 				if self.searchLexique(stem) :
+					#stem trouve
 					return (token, stem, suff, True)
 				else :
 					for pref in prefixes :
@@ -125,6 +131,7 @@ class Analyser :
 		except KeyError:
 			return (token, stem, None, False)
 
+	#la categorie possible avec sa probabilite
 	def getTag(self, token) :
 		probasTags = []
 		data = self.checkStem(token)
@@ -139,6 +146,9 @@ class Analyser :
 		else:
 			return (stem, [], found)
 
+
+#lire le lexique du fichier
+
 def getLexique(infile) :
 	liste = []
 	with codecs.open(infile, 'r', 'utf-8') as inputFileObj:
@@ -150,6 +160,9 @@ def getLexique(infile) :
 	inputFileObj.close()
 	return liste
 				
+				
+#analyser le mot du STDIN
+
 def readFileG1(line, analyseur, lexique) :
 	#outputfile = 'output-g2.txt'
 	#output = codecs.open(outputfile, 'w', 'utf-8')
