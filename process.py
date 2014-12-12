@@ -4,8 +4,6 @@ from __future__ import unicode_literals
 import re
 import sys
 import codecs
-from input_g1 import getLexique
-from input_g1 import readFileG1
 from probas2dict import dict_probas
 from pprint import pprint
 
@@ -132,7 +130,16 @@ class Analyser :
 				return (stem, [], found)
 		else:
 			return (stem, [], found)
-			
+
+def getLexique(infile) :
+	liste = []
+	with codecs.open(infile, 'r', 'utf-8') as inputFileObj:
+		for line in inputFileObj :
+			data = line.split('\t')
+			liste.append(data[0])
+	inputFileObj.close()
+	return liste
+				
 def readFileG1(line, analyseur, lexique) :
 	#outputfile = 'output-g2.txt'
 	#output = codecs.open(outputfile, 'w', 'utf-8')
@@ -162,13 +169,19 @@ def readFileG1(line, analyseur, lexique) :
 				(stem, tags, found) = analyseur.getTag(mot)
 				new_acol += "|2:stem:"
 				new_acol += stem
+				count_tags = 1
 				for t in tags :
 					pos = t[0]
 					cert = t[1]
-					new_acol += "|2:tag:"
+					new_acol += "|2:tag_"
+					new_acol += count_tags
+					new_acol += ":"
 					new_acol += pos
-					new_acol += "|2:certitude:"
+					new_acol += "|2:certitude_"
+					new_acol += count_tags
+					new_acol += ":"
 					new_acol += cert
+					count_tags += 1
 					
 				change = ""
 				if len(tags) >= 3:
