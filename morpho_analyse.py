@@ -72,17 +72,17 @@ class Analyser :
 	
 	def searchLexique(self, stem) :
 
-		pattern = '^'+stem+'\w{,2}$'
+		pattern = '^'+stem+'\w?$'
 		if re.search('(c|ç)$', stem) != None :
-			pattern = '^'+stem[:-1]+'(c|ç|que|ch)\w{,2}$'
+			pattern = '^'+stem[:-1]+'(c|ç|que|ch)\w?$'
 		if re.search('ch$', stem) != None :
-			pattern = '^'+stem[:-2]+'(c|ç|que|ch)\w{,2}$'
+			pattern = '^'+stem[:-2]+'(c|ç|que|ch)\w?$'
 		if re.search('que$', stem) != None :
-			pattern = '^'+stem[:-3]+'(c|ç|que|ch)\w{,2}$'
+			pattern = '^'+stem[:-3]+'(c|ç|que|ch)\w?$'
 		if re.search('(al|el)$', stem) != None :
-			pattern = '^'+stem[:-2]+'(al|el)\w{,2}$'
+			pattern = '^'+stem[:-2]+'(al|el)\w?$'
 		if stem[-1] == stem[-2] :
-			pattern = '^'+stem+'?.{,2}$'
+			pattern = '^'+stem+'?\w?$'
 		
 		for word in self.lexique:
 			if re.search(pattern, word) != None :
@@ -163,11 +163,11 @@ def readFileG1(line, analyseur, lexique) :
 			acol = c[0]
 			mot = c[1]
 			if mot[0] == '_':
-				print(acol+" "+mot+" ")
+				print(acol+" "+mot+" "),
 			elif mot in lexique :
-				print(acol+" "+mot+" ")
+				print(acol+" "+mot+" "),
 			elif mot[0] in '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~':
-				print(acol+" "+mot+" ")
+				print(acol+" "+mot+" "),
 			else :
 				new_acol = acol[:-1]
 				(stem, tags, found) = analyseur.getTag(mot)
@@ -230,9 +230,9 @@ def readFileG1(line, analyseur, lexique) :
 				else:
 					new_acol += "|2:faute:0"
 				new_acol += "}"	
-				print(new_acol+" "+mot+"\n")
+				print(new_acol+" "+mot+"\n"),
 		else:
-			print(c[0]+" ")
+			print(c[0]+" "),
 	
 	print("\n")	
 
