@@ -88,8 +88,9 @@ class Analyser :
 			return (token,stem,'',False)
 		for suff in  suffixes:
 			stem = token[:len(token) - len(suff)]
-			while stem[-1] in "-_":
-				stem = stem[:-1]
+			if(len(stem) > 2):
+				while stem[-1] in "-_":
+					stem = stem[:-1]
 			if(len(stem) > 2):
 				if self.searchLexique(stem) :
 					suffix = suff
@@ -97,8 +98,9 @@ class Analyser :
 				else :
 					for pref in prefixes :
 						stem = token[len(pref):len(token) - len(suff)]
-						while stem[0] in "-_":
-							stem = stem[1:]
+						if(len(stem) > 2):
+							while stem[0] in "-_":
+								stem = stem[1:]
 						if(len(stem)>2):
 							if self.searchLexique(stem) :
 								return (token, stem,suff,True)
