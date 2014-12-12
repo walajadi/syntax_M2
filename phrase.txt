@@ -1,0 +1,87 @@
+{Piere} Piere
+{et} et
+{Jean} Jean
+{Maçon} Maçon
+{on} on
+{tout} tout
+{les} les
+{deux} deux
+{fêté} fêté
+{leur} leur
+{anniv} anniversaire
+{hier} hier
+{;;}_PONCT
+{C’} c'
+{était} était
+{une} une
+{grosse} grosse
+{teuf} fête
+{2} de
+{la} la
+{mort} mort
+{,}_PONCT
+{on} on
+{a} a
+{tout} tout
+{KC} cassé
+{.}_PONCT
+{Marie} Marie
+{est} est
+{partie} partie
+{à} à
+{16h}_TIME
+{pcq} parce
+{} que
+{ses} ses
+{parents} parents
+{la} la
+{saoulaient} saoulaient
+{_LCB}_PONCT
+{vraiment} vraiment
+{_RCB}_PONCT
+{.}_PONCT
+{M.} M.
+{le} le
+{président} président
+{Obama} Obama
+{argait} argait
+{être} être
+{au} au
+{top} top
+{du} du
+{top} top
+{lorsque} lorsque
+{le} le 
+{conférence} conférence
+{du} du
+{8/09/2020}_DATE
+{à} à
+{débutée} débutée
+{.}_PONCT
+{mdr} mort de rire
+{je} je
+{t’} t'
+{aimeuuh} aime
+{trô} trop
+{=)}_SMILEY
+{il} il
+{y} y
+{a} a
+{d} d
+{ifférentes} ifférentes
+{possibilités}
+{_UDS}_PONCT
+{Il} il
+{a} a
+{dit} dit
+{“}_PONCT
+{oui} oui
+{,}_PONCT
+{je} je
+{ne} ne
+{veux} veux
+{pas} pas
+{voir} voir
+{ça} ça
+{”}_PONCT
+{.}_PONCT

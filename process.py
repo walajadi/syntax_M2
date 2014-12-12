@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import re
 import codecs
 from input_g1 import getLexique
+from input_g1 import readFileG1
 from probas2dict import dict_probas
 from pprint import pprint
 
@@ -80,7 +81,7 @@ class Analyser :
 		if re.search('que$', stem) != None :
 			pattern = '^'+stem[:-3]+'(c|ç|que|ch)\w{,2}$'
 		if re.search('(al|el)$', stem) != None :
-			pattern = '^'+stem[:-2]+'(al|el)(\w)*$'
+			pattern = '^'+stem[:-2]+'(al|el)\w{,2}$'
 		if stem[-1] == stem[-2] :
 			pattern = '^'+stem+'?.{,2}$'
 		
@@ -96,36 +97,44 @@ class Analyser :
 		prefixes = self.aff_guesser.listePrefPossibles(token)
 		stem = token
 		suffixes = sorted(suffixes,key=len, reverse = True)
+		if len(suffixes) < 1:
+			return (token,stem,'',False)
 		for suff in  suffixes:
 			stem = token[:len(token) - len(suff)]
-			if self.searchLexique(stem) :
-				#bingo trouvé
-				suffix = suff
-				return (token, stem, suff) #or something like this
-			else :
-				for pref in prefixes :
-					stem = token[len(pref):len(token) - len(suff)]
-					if self.searchLexique(stem) :
-						return (token, stem,suff)#ici on peux retourner le prefixe ??
-					#elif self.searchLexique(stem) :
-					#	return (token, stem, suff)
+			if(len(stem) > 1):
+				if self.searchLexique(stem) :
+					#bingo trouvé
+					suffix = suff
+					return (token, stem, suff, True) #or something like this
+				else :
+					for pref in prefixes :
+						stem = token[len(pref):len(token) - len(suff)]
+						if self.searchLexique(stem) :
+							return (token, stem,suff,True)#ici on peux retourner le prefixe ??
+						#elif self.searchLexique(stem) :
+						#	return (token, stem, suff)
 		try :
-			return (token, stem, suffixes[0])
+			return (token, stem, suffixes[0], False)
 		except KeyError:
-			return (token, stem, None)
+			return (token, stem, None, False)
 
 	def getTag(self, token) :
 		probasTags = []
 		data = self.checkStem(token)
-		affixes = data[2]
-		print affixes
-		try :
-			return self.probaTags[affixes]
-		except KeyError:
-			return None
+		stem = data[1]
+		suff = data[2]
+		found = data[3]
+		if suff != None:
+			try :
+				return (stem, self.probaTags[suff], found)
+			except KeyError:
+				return (stem, [], found)
+		else:
+			return (stem, [], found)
+			
 if __name__ == '__main__':
 
-	suff = r'pertinent_suffixes.txt'
+	suff = r'pertinent_suffixes+s.txt'
 	pref = r'pertinent_prefixes.txt'
 	lex_path = r'lexique.txt'
 	probas_file = r'cat_probas.txt'
@@ -138,3 +147,5 @@ if __name__ == '__main__':
 	analyseur = Analyser(guesser, dict_proba , lexique)
 	#print analyseur.checkStem('anticonsititutionnellement')
 	print analyseur.getTag("antisocialisme")
+	readFileG1('phrase.txt', 'pertinent_suffixes+s.txt', 'pertinent_prefixes.txt', lex_path, dict_proba)
+
